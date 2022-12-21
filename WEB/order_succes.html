@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&M STORE</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- link font chữ -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="icon" href="./assets/img/logo/main.png" type="image/x-icon"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    form.example input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 80%;
+      background: #f1f1f1;
+    }
+  
+    form.example button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: #2196F3;
+      color: black;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none;
+      cursor: pointer;
+    }
+  
+    form.example button:hover {
+      background: #0b7dda;
+    }
+  
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  
+  </style>
+  
+  <body>
+    <div class="overlay hidden"></div>
+   
+  
+    
+  <!-- header -->
+
+  <header class="header">
+    <div class="container">
+      <div class="top-link clearfix hidden-sm hidden-xs">
+        <div class="row">
+          </div>
+        </div>
+      </div>
+      <div class="header-main clearfix">
+        <div class="row">
+          <div class="col-lg-3 col-100-h">
+            <div id="trigger-mobile" class="visible-sm visible-xs"><i class="fas fa-bars"></i></div>
+            <div class="logo">
+              <a href="index.html">
+                <img src="./assets/img/logo/B&M STORE.png" alt="">
+              </a>
+            </div>
+            <div class="mobile_cart visible-sm visible-xs">
+              <a href="./cart.html" class="header__second__cart--icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="header__second__cart--notice" class="header__second__cart--notice">3</span>
+              </a>
+              <a href="./Login.html" class="header__second__like--icon">
+                <i class="far fa-user"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 m-auto pdt15">
+            <form class="example" action="./Product.html">
+              <input type="text" class="input-search" placeholder="Tìm kiếm.." name="search">
+              <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <div class="col-3 m-auto hidden-sm hidden-xs">
+            <div class="item-car clearfix">
+              <a href="./cart.html" class="header__second__cart--icon">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+            <div class="item-like clearfix">
+              <a href="./Login.html" class="header__second__like--icon">
+                <i class="far fa-user"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="header_nav hidden-sm hidden-xs">
+      <div class="container">
+        <ul class="header_nav-list nav">
+          <li class="header_nav-list-item "><a href="./index.html" class="active">Trang chủ</a></li>
+          <li class="header_nav-list-item"><a href="./intro.html">Giới thiệu</a></li>
+          <li class="header_nav-list-item has-mega">
+            <a href="./Product.html">Sản phẩm<i class="fas fa-angle-right" style="margin-left: 5px;"></i></a>
+            <div class="mega-content" style="overflow-x: hidden;">
+              <div class="row">
+                <ul class="col-8 no-padding level0">
+                  <li class="level1">
+                    <a class="hmega" href="./Product.html">Tất cả sản phẩm</a>
+                  </li>
+                  <li class="level1">
+                    <a class="hmega">Danh mục</a>
+                    <ul class="level1">
+                      <li class="level2"><a href="./Product.html">Sản phẩm nổi bật</a></li>
+                      <li class="level2"><a href="./Product.html">Sản phẩm mới</a></li>
+                      <li class="level2"><a href="./Product.html">Sản phẩm khuyến mãi</a></li>
+                    </ul>
+                  </li>
+                  <li class="level1">
+                    <a class="hmega">Thể loại</a>
+                    <ul class="level1">
+                      <li class="level2"><a href="./Product.html">Giày thể thao</a></li>
+                      <li class="level2"><a href="./Product.html">Giày đá bóng</a></li>
+                      <li class="level2"><a href="./Product.html">Giày tây</a></li>
+                      <li class="level2"><a href="./Product.html">Boots</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="col-4">
+                  <a href="">
+                    <picture>
+                      <img src="https://file.hstatic.net/1000294073/file/khuyen-mai_grande.gif" alt="" width="80%">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header_nav-list-item"><a href="./contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- end header -->
+      <!-- content -->
+        <div class="container">
+          <div class="content" style="height: 100px;box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);margin-top: 200px;margin-bottom:200px;text-align:center">
+            <h1 style="margin-left: 20px;">Đặt hàng thành công !</h1>
+            <a style="margin-left: 20px;font-size: 16px;" href="Product.html">Tiếp tục mua hàng</a>
+          </div>
+        </div>
+      <!-- end content -->
+     <!-- footer -->
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <img src="./assets/img/logo/B&M STORE.png" alt="">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <p><i class="fas fa-search-location footer__item-icon"></i> TP.Hồ Chí Minh, Việt Nam</p>
+          </li>
+          <li class="footer__item">
+            <p><i class="fas fa-phone-square-alt footer__item-icon"></i> Phone: <a
+                href="tel:0946068620">0946068620</a></p>
+          </li>
+          <li class="footer__item">
+            <p><i class="fas fa-envelope-square footer__item-icon"></i> Email: <a
+                href="mailto:bmstore@gmail.com">bmstore@gmail.com</a></p>
+          </li>
+          <li class="fb-ig">
+            <a href="index.html"><i class="fab fa-facebook" style="font-size: 24px; margin-right: 10px"></i></a>
+            <a href="index.html"><i class="fab fa-instagram" style="font-size: 24px; margin-right: 10px;color: red;"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div style="display: flex;justify-content:space-between;cursor: pointer;margin-bottom: 8px;"
+          data-toggle="collapse" data-target="#demo2">
+          <h3 class="footer__heading">Thông tin của chúng tôi</h3><i class="fas fa-chevron-down checkdl1"></i>
+        </div>
+        <ul class="footer__list collapse show" id="demo2">
+          <li class="footer__item">
+            <a href="https://goo.gl/maps/eDHCz88a9yu2cT7U7" class="footer__item--link"><i class="fas fa-map-marker-alt"></i> Cơ sở 1: 669, QL1A, khu phố 6, phường Linh Xuân, Thủ Đức, TP. Hồ Chí Minh.</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://goo.gl/maps/uMr9Ld3i7HUQgvaq7" class="footer__item--link"><i class="fas fa-map-marker-alt"></i> Cơ sở 2: KTX Khu B, Đại học Quốc gia, phường Linh Trung, Thủ Đức, TP. Hồ Chí Minh.</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div style="display: flex;justify-content:space-between;cursor: pointer;margin-bottom: 8px;"
+          data-toggle="collapse" data-target="#demo1">
+          <h3 class="footer__heading">Chính sách & Bảo mật</h3><i class="fas fa-chevron-down checkdl1"></i>
+        </div>
+        <ul class="footer__list collapse show" id="demo1">
+          <li class="footer__item">
+            <a href="polyci.html" class="footer__item--link">Chính sách bảo mật</a>
+          </li>
+          <li class="footer__item">
+            <a href="polyci.html" class="footer__item--link">Chính sách đổi hàng</a>
+          </li>
+          <li class="footer__item">
+            <a href="polyci.html" class="footer__item--link">Chính sách giao hàng</a>
+          </li>
+          <li class="footer__item">
+            <a href="polyci.html" class="footer__item--link">Chính sách bảo hành</a>
+          </li>
+          <li class="footer__item">
+            <a href="polyci.html" class="footer__item--link">Chính sách thanh toán</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div style="display: flex;justify-content:space-between;cursor: pointer;margin-bottom: 8px;"
+          data-toggle="collapse" data-target="#demo">
+          <h3 class="footer__heading">Hỗ trợ chung</h3><i class="fas fa-chevron-down checkdl1"></i>
+        </div>
+        <ul class="footer__list collapse show" id="demo">
+          <li class="footer__item">
+            <a href="index.html" class="footer__item--link">Trang chủ</a>
+          <li class="footer__item">
+            <a href="./intro.html" class="footer__item--link">Giới thiệu</a>
+          </li>
+          <li class="footer__item">
+            <a href="./Product.html" class="footer__item--link">Sản phẩm</a>
+          </li>
+          <li class="footer__item">
+            <a href="./contact.html" class="footer__item--link">Liên hệ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__text">© Bản quyền thuộc về B&M STORE</p>
+  </div>
+</footer>
+<div id="go-to-top">
+  <a class="btn-gototop"><i class="fas fa-arrow-up"></i></a>
+</div>
+<!-- end footer -->
+</body>
+</html>
